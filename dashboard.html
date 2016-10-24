@@ -12,7 +12,7 @@
     
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
-
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -71,8 +71,8 @@
       <div class="container-fluid">
       <div class="tab-content" id="dashboard-tabsContent">
         <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="home-tab">
-          <p>First Tab</p>
-        </div>
+          <div class="dashboard-chart"><script type="text/javascript" src="js/dashboard-donut.js"></script></div>
+        </div><!--END #home-->
         <div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab">
           <p>Second Tab</p>
         </div>
@@ -94,5 +94,26 @@
       })
       $('#dashboard-tabs a:first').tab('show') // Select first tab
     </script>
+    <style>
+      .generalProgress {
+        font-size:52px;
+        font-weight:bold;
+        top:-10px;
+        color: #5bbaaf !important;
+        font-family:'vag_rounded-boldregular', 'vag_roundedregular', helvetica, arial, sans-serif;
+      }
+      .weeklyProgress {
+        font-size:21px;
+        text-anchor:middle;
+        font-weight:bold;
+        padding-top:10px;
+        font-family:'vag_rounded-boldregular', 'vag_roundedregular', helvetica, arial, sans-serif;
+      }
+      
+      .weeklyLabel {
+        font-family:'vag_roundedregular', helvetica, arial, sans-serif;
+        font-size:1em;
+      }
+    </style>
   </body>
 </html>
