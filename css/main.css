@@ -123,6 +123,121 @@ body.greenBg {
     display: block;
     height: 16vh; }
 
+.dashboard-top {
+  position: relative;
+  height: 37%;
+  width: 100%;
+  background-color: #5cd3d4;
+  background-image: url(../img/dashboard-top_bg.png);
+  background: -webkit-linear-gradient(45deg, #7bbeef, #61d4ca, #dbcd8d);
+  background: linear-gradient(45deg, #7bbeef, #61d4ca, #dbcd8d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    padding: 9px 3px;
+    margin-bottom: 0; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #f4f2f9;
+      width: 21px;
+      height: 3px;
+      border-radius: 2px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+
+.user-avatar {
+  position: relative;
+  height: 95px;
+  width: 95px;
+  background: #fafafa;
+  border-radius: 50px;
+  border: 4px solid #f1f0f6;
+  margin: auto;
+  display: block;
+  overflow: hidden; }
+  .user-avatar img {
+    height: 100px;
+    width: 100px; }
+
+.user-title {
+  text-align: center;
+  color: #f4f2f9;
+  margin-top: 10px; }
+  .user-title h4 {
+    font-size: 1.3125em;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    margin: 0; }
+  .user-title p {
+    font-size: 0.9375;
+    font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+    margin-top: 5px; }
+
+.nav-tabs {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  max-width: 450px;
+  padding: 0px 5px;
+  bottom: 0px;
+  border: none;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto; }
+  .nav-tabs li {
+    width: 45%; }
+  .nav-tabs li:first-child {
+    width: 25%; }
+  .nav-tabs li:last-child {
+    width: 30%; }
+  .nav-tabs li > a, .nav-tabs li.active > a, .nav-tabs li.active > a:focus, .nav-tabs li.active > a:hover {
+    background-color: transparent;
+    font-size: 4vw;
+    padding: 0;
+    border: 0;
+    line-height: normal;
+    color: white; }
+  .nav-tabs li > a {
+    font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+    text-transform: uppercase; }
+  .nav-tabs li.active a {
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    text-transform: uppercase; }
+    .nav-tabs li.active a span {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 3px; }
+
+.tab-content {
+  position: relative;
+  margin-top: 20px; }
+
+@media screen and (min-width: 768px) {
+  .dashboard-top {
+    height: 27%; } }
+@media screen and (min-width: 768px) {
+  .nav-tabs {
+    bottom: 0.8em; }
+    .nav-tabs li > a, .nav-tabs li.active > a, .nav-tabs li.active > a:focus, .nav-tabs li.active > a:hover {
+      font-size: 2.2vw; } }
+@media screen and (min-width: 400px) {
+  .user-title {
+    margin-top: 15px; } }
+@media screen and (min-width: 400px) {
+  .user-avatar {
+    height: 100px;
+    width: 100px; } }
+@media screen and (max-width: 320px) {
+  .dashboard-top {
+    height: 42%; } }
 html {
   font-size: 16px;
   font-family: "vag_roundedregular", "helvetica", Arial, sans-serif;
@@ -130,7 +245,26 @@ html {
 
 body {
   min-height: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: white; }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.align-center {
+  text-align: center; }
 
 .adecco-logo {
   position: absolute;

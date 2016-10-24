@@ -14,6 +14,7 @@ $vag_regular: 'vag_roundedregular', helvetica, arial, sans-serif
 @import fonts
 @import login-screen
 @import start-screen
+@import dashboard-screen
 
 // General style
 
@@ -28,7 +29,26 @@ body
     //Forcing body to take 100% height
     min-height: 100%
     height: 100%
+    background-color: white
 
+.row.no-gutters
+    margin-right: 0
+    margin-left: 0
+    
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"]
+    padding-right: 0
+    padding-left: 0
+
+.float-right
+    float: right
+    
+.float-left
+    float: left
+    
+.align-center
+    text-align: center
+    
 .adecco-logo
     position: absolute
     bottom: .95em

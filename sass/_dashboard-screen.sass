@@ -1,0 +1,152 @@
+// Dashboard screen
+
+.dashboard-top
+    position: relative
+    height: 37%
+    width: 100%
+    
+    //Fallback
+    background-color: #5cd3d4
+    background-image: url(../img/dashboard-top_bg.png)
+    
+    //Chrome 10-25, Safari 5.1-6
+    background: -webkit-linear-gradient(45deg, #7bbeef, #61d4ca, #dbcd8d)
+    //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    background: linear-gradient(45deg, #7bbeef, #61d4ca, #dbcd8d)
+    background-size: cover
+    background-repeat: no-repeat
+    -webkit-box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+    box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+
+.navbar 
+    margin-bottom: 0px
+    
+.navbar-default 
+    background-color: transparent
+    border-color: transparent
+    .navbar-toggle
+        border-color: transparent
+        padding: 9px 3px
+        margin-bottom: 0
+        
+        .icon-bar 
+            background-color: #f4f2f9
+            width: 21px
+            height: 3px
+            border-radius: 2px
+            
+        &:focus, &:hover
+            background-color: transparent    
+
+.user-avatar
+    position: relative
+    height: 95px
+    width: 95px
+    background: #fafafa
+    border-radius: 50px
+    border: 4px solid #f1f0f6
+    margin: auto
+    display: block
+    overflow: hidden
+    
+    img
+        height: 100px
+        width: 100px
+
+
+.user-title
+    text-align: center
+    color: #f4f2f9
+    margin-top: 10px
+    
+    h4
+        font-size: 1.3125em
+        font-family: $vag_bold
+        margin: 0
+    p
+        font-size: 0.9375
+        font-family: $vag_regular
+        margin-top: 5px
+
+
+.nav-tabs
+    position: absolute
+    height: 30px
+    width: 100%
+    max-width: 450px
+    padding: 0px 5px
+    bottom: 0px
+    border: none
+    text-align: center
+    left: 0
+    right: 0
+    margin: auto
+    
+    li
+        width: 45%
+        
+    li:first-child
+        width: 25%
+        
+    li:last-child
+        width: 30%
+    
+    li>a, li.active>a, li.active>a:focus, li.active>a:hover
+        background-color: transparent
+        font-size: 4vw
+        padding: 0
+        border: 0
+        line-height: normal
+        color: white
+    li>a
+        font-family: $vag_regular
+        text-transform: uppercase
+        
+    li.active a
+        font-family: $vag_bold
+        text-transform: uppercase 
+        
+        span
+            border-bottom: 2px solid #fff 
+            padding-bottom: 3px 
+
+
+.tab-content
+    position: relative
+    margin-top: 20px
+
+
+
+
+
+//Media queries
+
+
+//Adjusting dashboard-top for iPad screen
+@media screen and (min-width:768px)
+    .dashboard-top
+        height: 27%
+
+//Adjusting nav-tabs font-size and bottom distance for iPad
+@media screen and (min-width:768px)
+    .nav-tabs
+        bottom: .8em
+        li>a, li.active>a, li.active>a:focus, li.active>a:hover
+            font-size: 2.2vw
+        
+//Giving user-title a bit of space large mobile screens
+@media screen and (min-width:400px)
+    .user-title
+        margin-top: 15px
+
+//Making user-avatar look bigger on large mobile screens
+@media screen and (min-width:400px)
+    .user-avatar
+        height: 100px
+        width: 100px
+        
+
+//dashboard-top adjustment for iPhone 5 and similar        
+@media screen and (max-width:320px)
+    .dashboard-top
+        height: 42%
