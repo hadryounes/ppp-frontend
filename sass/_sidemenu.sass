@@ -1,0 +1,222 @@
+// Side menu component
+
+// Variables
+$sidemenu-width: 85vw
+
+body, html
+    font-size: 100%
+    padding: 0
+    margin: 0
+
+// Reset
+
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    &:after, &:before
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix
+    &:before
+        content: " "
+        display: table
+    &:after
+        content: " "
+        display: table
+        clear: both
+
+
+a
+    color: #f0f0f0
+    text-decoration: none
+    &:hover
+        color: #000
+
+//.main
+//  width: 90%
+//  max-width: 69em
+//  margin: 0 auto
+//  padding: 0 1.875em 3.125em 1.875em
+
+//.main > section
+//  max-width: 260px
+//  width: 90%
+//  margin: 0 auto
+//  h2
+//    font-weight: 300
+//    color: #ccc
+//  button
+//    border: none
+//    background: #47a3da
+//    color: #fff
+//    padding: 1.5em
+//    display: block
+//    width: 100%
+//    cursor: pointer
+//    margin: 10px 0
+//    font-size: 0.8em
+//    &:hover
+//      background: #258ecd
+//    &.active
+//      background: #0d77b6
+//    &.disabled
+//      background: #aaa
+//      pointer-events: none
+
+.icon-drop:before, .icon-arrow-left:before
+    font-family: 'fontawesome'
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    speak: none
+    font-style: normal
+    font-weight: normal
+    line-height: 2
+    text-align: center
+    color: #47a3da
+    -webkit-font-smoothing: antialiased
+    text-indent: 8000px
+    padding-left: 8px
+
+.container > header nav a:hover:before
+    color: #fff
+
+.icon-drop:before
+    content: "\e000"
+
+.icon-arrow-left:before
+    content: "\f060"
+  
+  
+// Component
+
+/* General styles for all menus
+
+.cbp-spmenu
+    //Fallback
+    background-color: #22292f
+    //background-image: url(../img/startscreen@2x.png)
+    
+    //Chrome 10-25, Safari 5.1-6
+    background: -webkit-linear-gradient(-45deg, #22292f, #56616f)
+    //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    background: linear-gradient(-45deg, #22292f, #56616f)
+    background-size: cover
+    background-repeat: no-repeat
+    position: fixed
+
+    a
+        display: block
+        color: #fff
+        font-size: 1.1em
+        font-family: $vag_bold
+        &:hover
+            background: #22292f
+            text-decoration: none
+        &:active
+            background: #22292f
+            color: white
+            text-decoration: none
+      
+
+.navbar-toggle
+    margin-top: 0px
+    margin-right: 10px
+
+/* Orientation-dependent styles for the content of the menu
+
+.cbp-spmenu-vertical
+    width: $sidemenu-width
+    height: 100%
+    top: 0
+    z-index: 1000
+    .cpb-user
+        position: relative
+        height: 3.75em
+        width: 100%
+        //border-bottom: 1px solid blue
+        .cpb-avatar
+            height: 7.46268657vh
+            width: 7.46268657vh
+            border-radius: 50px
+            overflow: hidden
+            //margin-top: .6em
+            margin-left: 2.6em
+            float: left
+            margin-right: .7em
+        h4.cpb-user-name
+            font-size: 1em
+            font-family: $vag_bold
+            padding-top: 2vh
+            color: white
+            opacity: .8
+            
+            
+    .cbp-links
+        //margin-top: 220px
+        margin-top: 20vh
+        a
+            padding: .6em 2.6em
+            text-transform: uppercase
+                
+            
+    .cpb-adecco-logo
+        bottom: 12vh
+        height: 6vh
+        left: 2.6em
+        
+    ul
+        position: absolute
+        bottom: 2vh
+        
+        li
+            float: left
+            list-style: none
+            margin-right: 5px
+            margin-left: 5px
+            a
+                font-family: $vag_regular
+                font-size: .8em
+                color: white
+                opacity: .6
+        
+/* Vertical menu that slides from the left or right
+
+.cbp-spmenu-right
+    right: -$sidemenu-width
+    &.cbp-spmenu-open
+        right: 0px
+
+/* Push classes applied to the body
+
+.cbp-spmenu-push
+    overflow-x: hidden
+    position: relative
+    left: 0
+
+.cbp-spmenu-push-toleft
+    left: -$sidemenu-width
+
+/* Transitions
+
+.cbp-spmenu, .cbp-spmenu-push
+    -webkit-transition: all 0.4s ease
+    -moz-transition: all 0.4s ease
+    transition: all 0.4s ease
+
+/* Example media queries
+
+@media screen and (max-height: 26.375em)
+    .cbp-spmenu-vertical
+        font-size: 90%
+        width: 190px
+    .cbp-spmenu-right
+        right: -190px
+    .cbp-spmenu-push-toright
+        left: 190px

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .centered {
   display: block;
   margin: auto; }
@@ -248,9 +249,167 @@ body.greenBg {
 @media screen and (max-width: 320px) {
   .dashboard-top {
     height: 42%; } }
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+a {
+  color: #f0f0f0;
+  text-decoration: none; }
+  a:hover {
+    color: #000; }
+
+.icon-drop:before, .icon-arrow-left:before {
+  font-family: "fontawesome";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2;
+  text-align: center;
+  color: #47a3da;
+  -webkit-font-smoothing: antialiased;
+  text-indent: 8000px;
+  padding-left: 8px; }
+
+.container > header nav a:hover:before {
+  color: #fff; }
+
+.icon-drop:before {
+  content: ""; }
+
+.icon-arrow-left:before {
+  content: ""; }
+
+/* General styles for all menus */
+.cbp-spmenu {
+  background-color: #22292f;
+  background: -webkit-linear-gradient(-45deg, #22292f, #56616f);
+  background: linear-gradient(-45deg, #22292f, #56616f);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed; }
+  .cbp-spmenu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif; }
+    .cbp-spmenu a:hover {
+      background: #22292f;
+      text-decoration: none; }
+    .cbp-spmenu a:active {
+      background: #22292f;
+      color: white;
+      text-decoration: none; }
+
+.navbar-toggle {
+  margin-top: 0px;
+  margin-right: 10px; }
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+  width: 85vw;
+  height: 100%;
+  top: 0;
+  z-index: 1000; }
+  .cbp-spmenu-vertical .cpb-user {
+    position: relative;
+    height: 3.75em;
+    width: 100%; }
+    .cbp-spmenu-vertical .cpb-user .cpb-avatar {
+      height: 7.46269vh;
+      width: 7.46269vh;
+      border-radius: 50px;
+      overflow: hidden;
+      margin-left: 2.6em;
+      float: left;
+      margin-right: 0.7em; }
+    .cbp-spmenu-vertical .cpb-user h4.cpb-user-name {
+      font-size: 1em;
+      font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+      padding-top: 2vh;
+      color: white;
+      opacity: 0.8; }
+  .cbp-spmenu-vertical .cbp-links {
+    margin-top: 20vh; }
+    .cbp-spmenu-vertical .cbp-links a {
+      padding: 0.6em 2.6em;
+      text-transform: uppercase; }
+  .cbp-spmenu-vertical .cpb-adecco-logo {
+    bottom: 12vh;
+    height: 6vh;
+    left: 2.6em; }
+  .cbp-spmenu-vertical ul {
+    position: absolute;
+    bottom: 2vh; }
+    .cbp-spmenu-vertical ul li {
+      float: left;
+      list-style: none;
+      margin-right: 5px;
+      margin-left: 5px; }
+      .cbp-spmenu-vertical ul li a {
+        font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+        font-size: 0.8em;
+        color: white;
+        opacity: 0.6; }
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-right {
+  right: -85vw; }
+  .cbp-spmenu-right.cbp-spmenu-open {
+    right: 0px; }
+
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0; }
+
+.cbp-spmenu-push-toleft {
+  left: -85vw; }
+
+/* Transitions */
+.cbp-spmenu, .cbp-spmenu-push {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+/* Example media queries */
+@media screen and (max-height: 26.375em) {
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px; }
+
+  .cbp-spmenu-right {
+    right: -190px; }
+
+  .cbp-spmenu-push-toright {
+    left: 190px; } }
 html {
   font-size: 16px;
-  font-family: "vag_roundedregular", "helvetica", Arial, sans-serif;
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif;
   height: 100%; }
 
 body {

@@ -20,14 +20,14 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="cbp-spmenu-push">
     <div class="dashboard-top">
       <header>
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button type="button" id="showRightPush" class="navbar-toggle collapsed">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -35,16 +35,32 @@
               </button>
               <!--<a class="navbar-brand" href="#">Brand</a>-->
             </div>
-        
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+    		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">  
+    			<div class="cpb-user">
+    			  <div class="cpb-avatar">
+    			    <img src="../img/user-picture@3x.png" alt="user picture" height="50" width="50">
+    			  </div>
+    			  <h4 class="cpb-user-name">Jean Zweiger</h4>
+    			</div>
+    			<div class="cbp-links">
+      			<a href="#">Dashboard</a>
+      			<a href="#">Online brand search</a>
+      			<a href="#">Profile builder</a>
+      			<a href="#">12 week challenge</a>
+      			<a href="#">Settings</a>
+      			<a href="#">Sign out</a>
+    			</div>
+          <div class="adecco-logo cpb-adecco-logo">
+            <img src="../img/adecco_white.svg" height="30" alt="adecco logo">  
+          </div><!--END .adecco-logo-->
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+          </ul>
+    		</nav>
       </header>
       
       <div class="user-avatar">
@@ -87,6 +103,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/modernizr.custom.js"></script>
     <script>
       $('#dashboard-tabs a').click(function (e) {
         e.preventDefault()
@@ -94,6 +112,19 @@
       })
       $('#dashboard-tabs a:first').tab('show') // Select first tab
     </script>
+		<script>
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showRightPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toleft' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			};
+
+		</script>
     <style>
       .generalProgress {
         font-size:52px;
