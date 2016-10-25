@@ -237,7 +237,7 @@ body.loginBg {
     color: white;
     text-decoration: none; }
 
-.signup-statement, .signup-personnal-statement {
+.signup-statement, .signup-personnal-statement, .signedup-statement {
   color: white;
   font-size: 1em;
   font-family: "vag_roundedregular", helvetica, arial, sans-serif;
@@ -246,6 +246,9 @@ body.loginBg {
 
 .signup-personnal-statement {
   font-size: 0.8em; }
+
+.signedup-statement {
+  margin-top: 20vh; }
 
 body.greenBg {
   background-color: #5bbaaf;
