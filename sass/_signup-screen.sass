@@ -25,10 +25,10 @@
         border-radius: 0
         color: #333
         width: 100%
-        max-width: 18.75em
+        //max-width: 18.75em
         padding-left: .4em
         font-size: 1em
-        margin-top: 2em
+        margin-top: 2.5em
         
 
         &::-webkit-input-placeholder
@@ -41,7 +41,7 @@
     
     .submit-btn
         width: 100%
-        max-width: 300px
+        //max-width: 300px
         margin-top: 1em
         background: $yellow
         border: 0
@@ -67,26 +67,41 @@
         font-size: .8em
         font-family: $vag_regular
     
-    ul
+    #signup-policies
         position: relative
-        padding: 0
+        height: auto
         width: 100%
-        text-align: center
-        display: block
-        height: 1em
-        
-        li
-            float: left
-            list-style: none
-            margin-right: 10px
-            margin-left: 10px
-            a
-                font-family: $vag_regular
-                font-size: .8em
+        margin-bottom: 3em
+        ul
+            position: absolute
+            padding: 0
+            left: 0
+            right: 0
+            margin-left: auto
+            margin-right: auto
+            width: 90%
+            text-align: center
+            display: block
+            height: 1em
+            
+            li
+                width: 33%
+                text-align: center
+                list-style: none
+                display: inline
+                a
+                    font-family: $vag_regular
+                    font-size: .75em
+                    color: white
+                    text-decoration: underline
+                    opacity: .8
+                
+            li + li:before
+                content: "|"
+                padding: 0 10px
                 color: white
-                text-decoration: underline
-                opacity: .8
-        
+                opacity: .5
+
         
 .signup-link
     position: absolute
