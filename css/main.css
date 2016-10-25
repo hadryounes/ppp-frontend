@@ -108,6 +108,9 @@ body.loginBg {
     color: white;
     text-decoration: none; }
 
+#login-password {
+  font-family: "Helvetica", Arial, sans-serif; }
+
 .login-logo {
   margin-top: 14vh; }
   .login-logo img {
