@@ -87,7 +87,7 @@
       <div class="container-fluid">
       <div class="tab-content" id="dashboard-tabsContent">
         <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="home-tab">
-          <div class="dashboard-chart"><script type="text/javascript" src="js/dashboard-donut.js"></script></div>
+          <div id="dashboard-chart"></div>
         </div><!--END #home-->
         <div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab">
           <p>Second Tab</p>
@@ -112,6 +112,7 @@
       })
       $('#dashboard-tabs a:first').tab('show') // Select first tab
     </script>
+    <script type="text/javascript" src="js/dashboard-donut.js"></script>
 		<script>
 			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 				showRightPush = document.getElementById( 'showRightPush' ),

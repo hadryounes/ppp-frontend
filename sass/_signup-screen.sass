@@ -1,0 +1,146 @@
+// Signup screen
+
+.login-logo
+    margin-top: 14vh
+    img
+        height: 10vh
+        margin: auto
+        width: auto
+        display: block
+
+.signup-form
+    position: relative
+    display: block
+    margin: auto
+    margin-top: 2em
+    width: 100%
+    max-width: 88vw
+    
+    input
+        height: 40px
+        background: transparent
+        border: 0
+        box-shadow: none
+        border-bottom: 1px solid rgba(255,255,255,0.7)
+        border-radius: 0
+        color: #333
+        width: 100%
+        max-width: 18.75em
+        padding-left: .4em
+        font-size: 1em
+        margin-top: 2em
+        
+
+        &::-webkit-input-placeholder
+            color: #333
+            
+        &:focus
+            outline: 0
+            border-color: $yellow
+            box-shadow: none
+    
+    .submit-btn
+        width: 100%
+        max-width: 300px
+        margin-top: 1em
+        background: $yellow
+        border: 0
+        color: white
+        font-family: $vag_bold
+        font-size: 1.15em
+        padding: .9em
+        height: auto
+        letter-spacing: 1px
+        line-height: normal
+        
+        &:active, &:hover
+            background: $yellow-dark
+            outline: 0
+            border: 0
+            color: white
+        
+    .forgot-link
+        float: right
+        color: white
+        margin-top: .5em
+        text-decoration: none
+        font-size: .8em
+        font-family: $vag_regular
+    
+    ul
+        position: relative
+        padding: 0
+        width: 100%
+        text-align: center
+        display: block
+        height: 1em
+        
+        li
+            float: left
+            list-style: none
+            margin-right: 10px
+            margin-left: 10px
+            a
+                font-family: $vag_regular
+                font-size: .8em
+                color: white
+                text-decoration: underline
+                opacity: .8
+        
+        
+.signup-link
+    position: absolute
+    bottom: .95em
+    color: white
+    font-family: $vag_bold
+    font-size: 1.1em
+    text-align: center
+    left: 0
+    right: 0
+    z-index: 2
+    margin: auto
+    //width: 100% 
+    float: left
+    
+    &:hover, &:focus, &:visited
+        color: white
+        text-decoration: none
+    
+.login-trouble-signing-link
+    font-family: $vag_regular
+    font-size: .8em
+    float: right
+    position: absolute
+    right: .95em
+    bottom: 1.6em
+    z-index: 3
+    color: white
+    
+    &:hover, &:focus, &:visited
+        color: white
+        text-decoration: none
+
+
+.ahaa-link
+    font-family: $vag_regular
+    font-size: .8em
+    margin-top: 1.5em
+    color: white
+    float: right
+    
+    &:hover, &:focus, &:visited
+        color: white
+        text-decoration: none
+        
+        
+.signup-statement
+    color: white
+    font-size: 1em
+    font-family: $vag_regular
+    text-align: center
+    width: 100%
+    
+.signup-personnal-statement
+    @extend .signup-statement
+    font-size: .8em
+    
