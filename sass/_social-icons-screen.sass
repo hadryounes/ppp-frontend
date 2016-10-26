@@ -1,0 +1,108 @@
+// Social icons screen
+
+.navbar 
+    margin-bottom: 0px
+    
+.navbar-default 
+    background-color: transparent
+    border-color: transparent
+    .navbar-toggle
+        border-color: transparent
+        padding: 9px 3px
+        margin-bottom: 0
+        
+        .icon-bar 
+            background-color: #f4f2f9
+            width: 21px
+            height: 3px
+            border-radius: 2px
+            
+        &:focus, &:hover
+            background-color: transparent    
+    
+    .social-networks-title
+        color: white
+        text-align: center
+
+.user-avatar
+    position: relative
+    height: 95px
+    width: 95px
+    background: #fafafa
+    border-radius: 50px
+    border: 4px solid #f1f0f6
+    margin: auto
+    display: block
+    overflow: hidden
+    
+    img
+        height: 100px
+        width: 100px
+
+.user-title
+    text-align: center
+    color: #f4f2f9
+    margin-top: 10px
+    
+    h4
+        font-size: 1.3125em
+        font-family: $vag_bold
+        margin: 0
+    p
+        font-size: 0.9375
+        font-family: $vag_regular
+        margin-top: 5px
+        
+
+// Social buttons
+.submit-btn
+    @extend .centered
+    width: 100%
+    max-width: 300px
+    margin-top: 1.5em
+    background: $yellow
+    border: 0
+    color: white
+    font-family: $vag_bold
+    font-size: 1.15em
+    padding: .9em
+    height: auto
+    letter-spacing: 1px
+    line-height: normal
+    
+    &:active, &:hover
+        background: $yellow-dark
+        outline: 0
+        border: 0
+        color: white
+
+
+
+
+//Display hamburger menu on iPad
+@media (min-width: 768px)
+    .navbar-toggle
+        position: relative
+        float: right
+        display: block
+        
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header
+        margin-right: -15px
+        margin-left: -15px
+        width: 100%
+        
+    .navbar-default .navbar-toggle 
+        margin-top: 10px
+        margin-right: -15px
+        
+//Giving user-title a bit of space large mobile screens
+@media screen and (min-width:400px)
+    .user-title
+        margin-top: 15px
+
+//Making user-avatar look bigger on large mobile screens
+@media screen and (min-width:400px)
+    .user-avatar
+        height: 100px
+        width: 100px
+        

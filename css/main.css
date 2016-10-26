@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.centered {
+.centered, .login-form .submit-btn, .signup-form .submit-btn, .submit-btn {
   display: block;
   margin: auto; }
 
@@ -11,6 +11,11 @@
 @font-face {
   font-family: "vag_roundedregular";
   src: url("../fonts/vag-rounded-light-webfont.woff2") format("woff2"), url("../fonts/vag-rounded-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "fontawesome";
+  src: url("../fonts/fontawsome-webfont.eot") format("eot"), url("../fonts/fontawsome-webfont.ttf") format("ttf"), url("../fonts/fontawsome-webfont.woff") format("woff"), url("../fonts/fontawsome-webfont.woff2") format("woff2"), url("../fonts/FontAwesome.otf") format("otf");
   font-weight: normal;
   font-style: normal; }
 body.loginBg {
@@ -43,7 +48,8 @@ body.loginBg {
     border-radius: 0;
     color: #333;
     width: 100%;
-    max-width: 18.75em;
+    margin: auto;
+    max-width: 300px;
     padding-left: 0.4em;
     font-size: 1em;
     margin-top: 2em; }
@@ -55,7 +61,6 @@ body.loginBg {
       box-shadow: none; }
   .login-form .submit-btn {
     width: 100%;
-    max-width: 300px;
     margin-top: 1.5em;
     background: #f5d66e;
     border: 0;
@@ -135,6 +140,8 @@ body.loginBg {
     border-radius: 0;
     color: #333;
     width: 100%;
+    margin: auto;
+    max-width: 300px;
     padding-left: 0.4em;
     font-size: 1em;
     margin-top: 2.5em; }
@@ -597,7 +604,8 @@ body.loginBg {
     border-radius: 0;
     color: #333;
     width: 100%;
-    max-width: 18.75em;
+    margin: auto;
+    max-width: 300px;
     padding-left: 0.4em;
     font-size: 1em;
     margin-top: 2em; }
@@ -689,6 +697,8 @@ body.loginBg {
     border-radius: 0;
     color: #333;
     width: 100%;
+    margin: auto;
+    max-width: 300px;
     padding-left: 0.4em;
     font-size: 1em;
     margin-top: 2.5em; }
@@ -700,6 +710,7 @@ body.loginBg {
       box-shadow: none; }
   .signup-form .submit-btn {
     width: 100%;
+    max-width: 300px;
     margin-top: 1em;
     background: #f5d66e;
     border: 0;
@@ -798,6 +809,7 @@ body.loginBg {
   max-width: 88vw; }
   .signup-form .submit-btn {
     width: 100%;
+    max-width: 300px;
     margin-top: 1em;
     background: #f5d66e;
     border: 0;
@@ -848,6 +860,94 @@ body.loginBg {
 .second-confirmation-statement {
   margin-top: 5vh; }
 
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    padding: 9px 3px;
+    margin-bottom: 0; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #f4f2f9;
+      width: 21px;
+      height: 3px;
+      border-radius: 2px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+  .navbar-default .social-networks-title {
+    color: white;
+    text-align: center; }
+
+.user-avatar {
+  position: relative;
+  height: 95px;
+  width: 95px;
+  background: #fafafa;
+  border-radius: 50px;
+  border: 4px solid #f1f0f6;
+  margin: auto;
+  display: block;
+  overflow: hidden; }
+  .user-avatar img {
+    height: 100px;
+    width: 100px; }
+
+.user-title {
+  text-align: center;
+  color: #f4f2f9;
+  margin-top: 10px; }
+  .user-title h4 {
+    font-size: 1.3125em;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    margin: 0; }
+  .user-title p {
+    font-size: 0.9375;
+    font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+    margin-top: 5px; }
+
+.submit-btn {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1.5em;
+  background: #f5d66e;
+  border: 0;
+  color: white;
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+  font-size: 1.15em;
+  padding: 0.9em;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: normal; }
+  .submit-btn:active, .submit-btn:hover {
+    background: #f3cf56;
+    outline: 0;
+    border: 0;
+    color: white; }
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    display: block; }
+
+  .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%; }
+
+  .navbar-default .navbar-toggle {
+    margin-top: 10px;
+    margin-right: -15px; } }
+@media screen and (min-width: 400px) {
+  .user-title {
+    margin-top: 15px; } }
+@media screen and (min-width: 400px) {
+  .user-avatar {
+    height: 100px;
+    width: 100px; } }
 html {
   font-size: 16px;
   font-family: "vag_roundedregular", helvetica, arial, sans-serif;
