@@ -380,6 +380,20 @@ body.greenBg {
 @media screen and (min-width: 768px) {
   .dashboard-top {
     height: 27%; } }
+@media (min-width: 768px) {
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    display: block; }
+
+  .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%; }
+
+  .navbar-default .navbar-toggle {
+    margin-top: 10px;
+    margin-right: -15px; } }
 @media screen and (min-width: 768px) {
   .nav-tabs {
     bottom: 0.8em; }
