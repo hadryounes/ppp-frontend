@@ -55,11 +55,15 @@
         
 
 // Social buttons
+
+.social-buttons
+    position: relative
+    margin-top: 5vh
+
 .submit-btn
     @extend .centered
     width: 100%
     max-width: 300px
-    margin-top: 1.5em
     background: $yellow
     border: 0
     color: white
@@ -76,8 +80,44 @@
         border: 0
         color: white
 
+.submitted-btn
+    @extend .submit-btn
+    background: transparent
+    border: 2px solid $yellow
+    color: white
+
+.social-btn
+    background-repeat: no-repeat
+    background-size: initial
+    background-position: 1em
+    margin-top: 1em
+    
+.facebook-btn
+    background-image: url(../img/facebook-icon.svg)
+
+.twitter-btn
+    background-image: url(../img/twitter-icon.svg)
+
+.xing-btn
+    background-image: url(../img/xing-icon.svg)
+
+.linkedin-btn
+    background-image: url(../img/linkedin-icon.svg)
+
+.viadeo-btn
+    background-image: url(../img/viadeo-icon.svg)
 
 
+.social-bottom
+    .done-btn
+        @extend .submit-btn
+        position: absolute
+        width: 100%
+        bottom: 0
+        left: 0
+        right: 0
+        max-width: none
+        border-radius: 0
 
 //Display hamburger menu on iPad
 @media (min-width: 768px)
