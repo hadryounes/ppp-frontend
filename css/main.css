@@ -108,7 +108,7 @@ body.loginBg {
     color: white;
     text-decoration: none; }
 
-#login-password {
+#login-password, #create-password, #repeat-password {
   font-family: "Helvetica", Arial, sans-serif; }
 
 .login-logo {
@@ -250,9 +250,6 @@ body.loginBg {
 .signup-personnal-statement {
   font-size: 0.8em; }
 
-.signedup-statement {
-  margin-top: 20vh; }
-
 body.greenBg {
   background-color: #5bbaaf;
   background-image: url(../img/startscreen@2x.png);
@@ -344,7 +341,8 @@ body.greenBg {
   .nav-tabs li:first-child {
     width: 25%; }
   .nav-tabs li:last-child {
-    width: 30%; }
+    width: 30%;
+    float: right; }
   .nav-tabs li > a, .nav-tabs li.active > a, .nav-tabs li.active > a:focus, .nav-tabs li.active > a:hover {
     background-color: transparent;
     font-size: 4vw;
@@ -555,6 +553,220 @@ a {
 
   .cbp-spmenu-push-toright {
     left: 190px; } }
+body.loginBg {
+  background-color: #bec2cd;
+  background-image: url(../img/loginbg@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.login-logo {
+  margin-top: 14vh; }
+  .login-logo img {
+    height: 10vh;
+    margin: auto;
+    width: auto;
+    display: block; }
+
+.login-form {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 7.1875em;
+  width: 100%;
+  max-width: 18.75em; }
+  .login-form input {
+    height: 40px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 0;
+    color: #333;
+    width: 100%;
+    max-width: 18.75em;
+    padding-left: 0.4em;
+    font-size: 1em;
+    margin-top: 2em; }
+    .login-form input::-webkit-input-placeholder {
+      color: #333; }
+    .login-form input:focus {
+      outline: 0;
+      border-color: #f5d66e;
+      box-shadow: none; }
+  .login-form .submit-btn {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1.5em;
+    background: #f5d66e;
+    border: 0;
+    color: white;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    font-size: 1.15em;
+    padding: 0.9em;
+    height: auto;
+    letter-spacing: 1px;
+    line-height: normal; }
+    .login-form .submit-btn:active, .login-form .submit-btn:hover {
+      background: #f3cf56;
+      outline: 0;
+      border: 0;
+      color: white; }
+  .login-form .forgot-link {
+    float: right;
+    color: white;
+    margin-top: 0.5em;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: "vag_roundedregular", helvetica, arial, sans-serif; }
+
+.signup-link {
+  position: absolute;
+  bottom: 0.95em;
+  color: white;
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: auto;
+  float: left; }
+  .signup-link:hover, .signup-link:focus, .signup-link:visited {
+    color: white;
+    text-decoration: none; }
+
+.login-trouble-signing-link {
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+  font-size: 0.8em;
+  float: right;
+  position: absolute;
+  right: 0.95em;
+  bottom: 1.6em;
+  z-index: 3;
+  color: white; }
+  .login-trouble-signing-link:hover, .login-trouble-signing-link:focus, .login-trouble-signing-link:visited {
+    color: white;
+    text-decoration: none; }
+
+#login-password {
+  font-family: "Helvetica", Arial, sans-serif; }
+
+.login-logo {
+  margin-top: 14vh; }
+  .login-logo img {
+    height: 10vh;
+    margin: auto;
+    width: auto;
+    display: block; }
+
+.signup-form {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 88vw; }
+  .signup-form input {
+    height: 40px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 0;
+    color: #333;
+    width: 100%;
+    padding-left: 0.4em;
+    font-size: 1em;
+    margin-top: 2.5em; }
+    .signup-form input::-webkit-input-placeholder {
+      color: #333; }
+    .signup-form input:focus {
+      outline: 0;
+      border-color: #f5d66e;
+      box-shadow: none; }
+  .signup-form .submit-btn {
+    width: 100%;
+    margin-top: 1em;
+    background: #f5d66e;
+    border: 0;
+    color: white;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    font-size: 1.15em;
+    padding: 0.9em;
+    height: auto;
+    letter-spacing: 1px;
+    line-height: normal; }
+    .signup-form .submit-btn:active, .signup-form .submit-btn:hover {
+      background: #f3cf56;
+      outline: 0;
+      border: 0;
+      color: white; }
+  .signup-form .forgot-link {
+    float: right;
+    color: white;
+    margin-top: 0.5em;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: "vag_roundedregular", helvetica, arial, sans-serif; }
+  .signup-form #signup-policies {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-bottom: 3em; }
+    .signup-form #signup-policies ul {
+      position: absolute;
+      padding: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      text-align: center;
+      display: block;
+      height: 1em; }
+      .signup-form #signup-policies ul li {
+        width: 33%;
+        text-align: center;
+        list-style: none;
+        display: inline; }
+        .signup-form #signup-policies ul li a {
+          font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+          font-size: 0.75em;
+          color: white;
+          text-decoration: underline;
+          opacity: 0.8; }
+      .signup-form #signup-policies ul li + li:before {
+        content: "|";
+        padding: 0 10px;
+        color: white;
+        opacity: 0.5; }
+
+.login-trouble-signing-link {
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+  font-size: 0.8em;
+  float: right;
+  position: absolute;
+  right: 0.95em;
+  bottom: 1.6em;
+  z-index: 3;
+  color: white; }
+  .login-trouble-signing-link:hover, .login-trouble-signing-link:focus, .login-trouble-signing-link:visited {
+    color: white;
+    text-decoration: none; }
+
+.ahaa-link {
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+  font-size: 0.8em;
+  margin-top: 1.5em;
+  color: white;
+  float: right; }
+  .ahaa-link:hover, .ahaa-link:focus, .ahaa-link:visited {
+    color: white;
+    text-decoration: none; }
+
+.signedup-statement {
+  margin-top: 10vh; }
+
 html {
   font-size: 16px;
   font-family: "vag_roundedregular", helvetica, arial, sans-serif;
@@ -571,7 +783,7 @@ body {
 
 .row.no-gutters > [class^="col-"],
 .row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
+  padding-right: 0xz;
   padding-left: 0; }
 
 .float-right {
