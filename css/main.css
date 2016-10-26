@@ -240,7 +240,7 @@ body.loginBg {
     color: white;
     text-decoration: none; }
 
-.signup-statement, .signup-personnal-statement, .signedup-statement {
+.signup-statement, .signup-personnal-statement, .signedup-statement, .confirmation-statement, .second-confirmation-statement {
   color: white;
   font-size: 1em;
   font-family: "vag_roundedregular", helvetica, arial, sans-serif;
@@ -780,6 +780,73 @@ body.loginBg {
 
 .signedup-statement {
   margin-top: 10vh; }
+
+.login-logo {
+  margin-top: 14vh; }
+  .login-logo img {
+    height: 10vh;
+    margin: auto;
+    width: auto;
+    display: block; }
+
+.signup-form {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 88vw; }
+  .signup-form .submit-btn {
+    width: 100%;
+    margin-top: 1em;
+    background: #f5d66e;
+    border: 0;
+    color: white;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    font-size: 1.15em;
+    padding: 0.9em;
+    height: auto;
+    letter-spacing: 1px;
+    line-height: normal; }
+    .signup-form .submit-btn:active, .signup-form .submit-btn:hover {
+      background: #f3cf56;
+      outline: 0;
+      border: 0;
+      color: white; }
+
+.login-bottom .signup-policies {
+  position: absolute;
+  height: auto;
+  bottom: 0.5em;
+  right: 1em;
+  z-index: 999; }
+  .login-bottom .signup-policies ul {
+    text-align: right; }
+    .login-bottom .signup-policies ul li {
+      width: 50%;
+      text-align: center;
+      list-style: none;
+      display: inline; }
+      .login-bottom .signup-policies ul li a {
+        font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+        font-size: 0.75em;
+        color: white;
+        text-decoration: underline;
+        opacity: 0.8; }
+    .login-bottom .signup-policies ul li + li:before {
+      content: "|";
+      padding: 0 10px;
+      color: white;
+      opacity: 0.5; }
+
+.signedup-statement {
+  margin-top: 10vh; }
+
+.confirmation-statement {
+  margin-top: 10vh; }
+
+.second-confirmation-statement {
+  margin-top: 5vh; }
 
 html {
   font-size: 16px;

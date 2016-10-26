@@ -28,14 +28,22 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="signup-form">
-            <p class="confirmation-statement">
-              You've successfully created a PPP account!
-            </p>
-            <p class="second-confirmation-statement">
-              To make full use of the PPP App, you need to connect with Facebook, Linkedin and Twitter.
+            <p class="signedup-statement">
+              Thank you for signing up, we sent an email to you with an activation link.
             </p>
             
-            <button type="submit" class="btn btn-default submit-btn">NEXT</button>
+            <form>
+              <div class="form-group">
+                <label for="signup-pin" class="hidden">Signup confirmation</label>
+                <input type="text" class="form-control" id="signup-pin" placeholder="Signup Confirmation Code">
+              </div><!--END .form-group-->
+              <button type="submit" class="btn btn-default submit-btn">CONFIRM</button>
+              
+              <div class="form-group">
+                <a href="#" class="ahaa-link" style="text-align:center">Already have an account ?</a>
+              </div><!--END .form-group-->
+      
+            </form>
             
           </div><!--END .signup-form-->
         </div><!--END .col-xs-10-->
@@ -46,11 +54,8 @@
           <img src="../img/adecco_white.svg" height="30" alt="adecco logo">  
         </div><!--END .adecco-logo-->
 
-        <div class="signup-policies">
-          <ul>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div>
+          <a href="#" class="login-trouble-signing-link">You haven't got any email?</a>
         </div>
       </div><!--END .login-bottom-->
       
