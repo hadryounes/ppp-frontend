@@ -1014,6 +1014,108 @@ body.loginBg {
   .user-avatar {
     height: 100px;
     width: 100px; } }
+.greyBg {
+  background-color: #d1d3dc;
+  background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc);
+  background: linear-gradient(-45deg, #c0c3cb, #f8f7fc);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.profile-overview-top {
+  position: relative;
+  height: auto;
+  padding-bottom: 1em;
+  width: 100%;
+  background-color: #5bbaaf;
+  background: -webkit-linear-gradient(-45deg, #458d85, #5bbaaf);
+  background: linear-gradient(-45deg, #458d85, #5bbaaf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    padding: 9px 3px;
+    margin-bottom: 0; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #f4f2f9;
+      width: 21px;
+      height: 3px;
+      border-radius: 2px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+
+.overview-social-icon {
+  position: relative;
+  height: 95px;
+  width: 95px;
+  background: #C4D36D;
+  border-radius: 50px;
+  border: 4px solid rgba(241, 246, 240, 0.8);
+  margin: auto;
+  display: block;
+  overflow: hidden; }
+  .overview-social-icon img {
+    height: 40px;
+    width: 40px;
+    color: #f5d66e;
+    display: block;
+    margin: 20px auto; }
+
+.overview-paragraph {
+  color: white;
+  text-align: center;
+  max-width: 90%;
+  display: block;
+  margin: 1em auto 0; }
+
+ul.overview-list {
+  position: relative;
+  margin-top: 1em;
+  padding: 0;
+  margin-bottom: 20px;
+  border-top: 1px solid #c3c3c3;
+  margin-top: 30px;
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif; }
+  ul.overview-list li {
+    list-style: none;
+    height: 4em;
+    border-bottom: 1px solid #c3c3c3; }
+    ul.overview-list li .center-table {
+      display: table;
+      height: 4em;
+      width: 100%; }
+      ul.overview-list li .center-table .circle-container {
+        display: table-cell;
+        margin: 0;
+        border-radius: 1em;
+        vertical-align: middle; }
+        ul.overview-list li .center-table .circle-container .circle {
+          height: 1em;
+          width: 1em;
+          background: #4fa299;
+          border-radius: 1em;
+          margin-right: 5px; }
+      ul.overview-list li .center-table .text-bullet {
+        display: table-cell;
+        margin: 0;
+        vertical-align: middle;
+        width: 70%; }
+      ul.overview-list li .center-table .overview-pts {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+        color: #757575; }
+
 html {
   font-size: 16px;
   font-family: "vag_roundedregular", helvetica, arial, sans-serif;
