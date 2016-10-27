@@ -115,7 +115,7 @@
 
 .tab-content
     position: relative
-    margin-top: 20px
+    margin-top: 2vh
     
 
 #dashboard-chart
@@ -135,8 +135,46 @@
 
 
 
-//Media queries
 
+// Profile Builder Tab Content
+
+#profile_builder
+
+    h4
+        text-align: center
+        margin-top: 4vh
+        margin-bottom: 0px
+        font-family: $vag_bold
+
+    #pb-facebook-chart, #pb-linkedin-chart, #pb-twitter-chart, #pb-xing-chart
+        max-width: 100% !important
+        overflow: hidden
+        svg
+            display: block
+            margin: 0px auto 10px
+            width: auto
+            max-width: 100%
+    
+            .generalProgress
+                font-family: $vag_bold
+                text-transform: uppercase 
+                font-size: 1em
+    
+    .strengthen-btn
+        background: $yellow
+        padding: .2em .8em
+        color: white
+        border: none
+        box-shadow: none
+        margin-top: -.3em
+        @extend .centered
+        &:active, &:focus
+            outline: none
+            background: $yellow-dark
+
+
+
+//Media queries
 
 //Adjusting dashboard-top for iPad screen
 @media screen and (min-width:768px)

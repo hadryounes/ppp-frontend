@@ -74,26 +74,66 @@
       <div class="container-fluid">
         <ul class="nav nav-tabs" id="dashboard-tabs" role="tablist">
           <li role="presentation" class="active">
-            <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><span>Dashboard</span></a>
+            <a href="#dashboard" id="dashboard-tab" role="tab" data-toggle="tab" aria-controls="dashboard" aria-expanded="true"><span>Dashboard</span></a>
           </li>
           <li role="presentation" class="">
-            <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"><span>Online Brand Search</span></a></li>
-          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span>Profile Builder</span></a></li>
+            <a href="#brand_search" role="tab" id="brand_search-tab" data-toggle="tab" aria-controls="brand_search" aria-expanded="false"><span>Online Brand Search</span></a></li>
+          <li role="presentation">
+            <a href="#profile_builder" id="profile_builder-tab" aria-controls="profile_builder" role="tab" data-toggle="tab"><span>Profile Builder</span></a>
+          </li>
         </ul>
         
       </div>
       
     </div><!--END .dashboard-top-->
       <div class="container-fluid">
-      <div class="tab-content" id="dashboard-tabsContent">
-        <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="home-tab">
-          <div id="dashboard-chart"></div>
+      <div class="tab-content">
+        <div class="tab-pane fade active in" role="tabpanel" id="dashboard" aria-labelledby="dashboard-tab">
+          <!--Dashboard Tab Content-->
+          <div id="dashboard-chart"></div><!-- END #dashboard-chart -->
+          <!-- END Dashboard Tab Content-->
         </div><!--END #home-->
-        <div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab">
+        <div class="tab-pane fade" role="tabpanel" id="brand_search" aria-labelledby="brand_search-tab">
           <p>Second Tab</p>
         </div>
-        <div class="tab-pane fade" role="tabpanel" id="messages" aria-labelledby="messages-tab">
-          <p>Third Tab</p>
+        <div class="tab-pane fade" role="tabpanel" id="profile_builder" aria-labelledby="profile_builder-tab">
+          <!-- Profile Builder Tab Content -->
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="facebook-chart">
+                <h4>Facebook</h4>
+                <div id="pb-facebook-chart"></div>
+                <button type="submit" class="btn btn-default strengthen-btn">strengthen</button>
+              </div><!--END #pb-facebook-chart-->
+            </div><!--END .col-xs-6-->
+            <div class="col-xs-6">
+              <div class="linkedin-chart">
+                <h4>Linkedin</h4>
+                <div id="pb-linkedin-chart"></div>
+                <button type="submit" class="btn btn-default strengthen-btn">strengthen</button>
+              </div><!--END #pb-linkedin-chart-->
+            </div><!--END .col-xs-6-->
+          </div><!--END .row-->
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="twitter-chart">
+                <h4>Twitter</h4>
+                <div id="pb-twitter-chart"></div>
+                <button type="submit" class="btn btn-default strengthen-btn">strengthen</button>
+              </div><!--END #pb-twitter-chart-->
+            </div><!--END .col-xs-6-->
+            <div class="col-xs-6">
+              <div class="xing-chart">
+                <h4>Xing</h4>
+                <div id="pb-xing-chart"></div>
+                <button type="submit" class="btn btn-default strengthen-btn">strengthen</button>
+              </div><!--END #pb-xing-chart-->
+            </div><!--END .col-xs-6-->
+          </div><!--END .row-->
+          
+
+
+          <!-- END Profile Builder Tab Content -->
         </div>
       </div><!--END .tab-content-->
     </div><!--END .container-fluid-->
@@ -113,6 +153,10 @@
       $('#dashboard-tabs a:first').tab('show') // Select first tab
     </script>
     <script type="text/javascript" src="js/dashboard-donut.js"></script>
+    <script type="text/javascript" src="js/pb-facebook.js"></script>
+    <script type="text/javascript" src="js/pb-linkedin.js"></script>
+    <script type="text/javascript" src="js/pb-twitter.js"></script>
+    <script type="text/javascript" src="js/pb-xing.js"></script>
 		<script>
 			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 				showRightPush = document.getElementById( 'showRightPush' ),
