@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.centered, .login-form .submit-btn, .login-form .submitted-btn, .signup-form .submit-btn, .signup-form .submitted-btn, #profile_builder .strengthen-btn, .submit-btn, .submitted-btn, .social-bottom .done-btn {
+.centered, .login-form .submit-btn, .login-form .submitted-btn, .login-form .social-next-btn, .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-next-btn, #profile_builder .strengthen-btn, .submit-btn, .submitted-btn, .social-bottom .done-btn, .social-next-btn {
   display: block;
   margin: auto; }
 
@@ -59,7 +59,7 @@ body.loginBg {
       outline: 0;
       border-color: #f5d66e;
       box-shadow: none; }
-  .login-form .submit-btn, .login-form .submitted-btn, .login-form .social-bottom .done-btn, .social-bottom .login-form .done-btn {
+  .login-form .submit-btn, .login-form .submitted-btn, .login-form .social-bottom .done-btn, .social-bottom .login-form .done-btn, .login-form .social-next-btn {
     width: 100%;
     margin-top: 1.5em;
     background: #f5d66e;
@@ -71,7 +71,7 @@ body.loginBg {
     height: auto;
     letter-spacing: 1px;
     line-height: normal; }
-    .login-form .submit-btn:active, .login-form .submitted-btn:active, .login-form .social-bottom .done-btn:active, .social-bottom .login-form .done-btn:active, .login-form .submit-btn:hover, .login-form .submitted-btn:hover, .login-form .social-bottom .done-btn:hover, .social-bottom .login-form .done-btn:hover {
+    .login-form .submit-btn:active, .login-form .submitted-btn:active, .login-form .social-bottom .done-btn:active, .social-bottom .login-form .done-btn:active, .login-form .social-next-btn:active, .login-form .submit-btn:hover, .login-form .submitted-btn:hover, .login-form .social-bottom .done-btn:hover, .social-bottom .login-form .done-btn:hover, .login-form .social-next-btn:hover {
       background: #f3cf56;
       outline: 0;
       border: 0;
@@ -151,7 +151,7 @@ body.loginBg {
       outline: 0;
       border-color: #f5d66e;
       box-shadow: none; }
-  .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-bottom .done-btn, .social-bottom .signup-form .done-btn {
+  .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-bottom .done-btn, .social-bottom .signup-form .done-btn, .signup-form .social-next-btn {
     width: 100%;
     margin-top: 1em;
     background: #f5d66e;
@@ -163,7 +163,7 @@ body.loginBg {
     height: auto;
     letter-spacing: 1px;
     line-height: normal; }
-    .signup-form .submit-btn:active, .signup-form .submitted-btn:active, .signup-form .social-bottom .done-btn:active, .social-bottom .signup-form .done-btn:active, .signup-form .submit-btn:hover, .signup-form .submitted-btn:hover, .signup-form .social-bottom .done-btn:hover, .social-bottom .signup-form .done-btn:hover {
+    .signup-form .submit-btn:active, .signup-form .submitted-btn:active, .signup-form .social-bottom .done-btn:active, .social-bottom .signup-form .done-btn:active, .signup-form .social-next-btn:active, .signup-form .submit-btn:hover, .signup-form .submitted-btn:hover, .signup-form .social-bottom .done-btn:hover, .social-bottom .signup-form .done-btn:hover, .signup-form .social-next-btn:hover {
       background: #f3cf56;
       outline: 0;
       border: 0;
@@ -643,7 +643,7 @@ body.loginBg {
       outline: 0;
       border-color: #f5d66e;
       box-shadow: none; }
-  .login-form .submit-btn, .login-form .submitted-btn, .login-form .social-bottom .done-btn, .social-bottom .login-form .done-btn {
+  .login-form .submit-btn, .login-form .submitted-btn, .login-form .social-bottom .done-btn, .social-bottom .login-form .done-btn, .login-form .social-next-btn {
     width: 100%;
     max-width: 300px;
     margin-top: 1.5em;
@@ -656,7 +656,7 @@ body.loginBg {
     height: auto;
     letter-spacing: 1px;
     line-height: normal; }
-    .login-form .submit-btn:active, .login-form .submitted-btn:active, .login-form .social-bottom .done-btn:active, .social-bottom .login-form .done-btn:active, .login-form .submit-btn:hover, .login-form .submitted-btn:hover, .login-form .social-bottom .done-btn:hover, .social-bottom .login-form .done-btn:hover {
+    .login-form .submit-btn:active, .login-form .submitted-btn:active, .login-form .social-bottom .done-btn:active, .social-bottom .login-form .done-btn:active, .login-form .social-next-btn:active, .login-form .submit-btn:hover, .login-form .submitted-btn:hover, .login-form .social-bottom .done-btn:hover, .social-bottom .login-form .done-btn:hover, .login-form .social-next-btn:hover {
       background: #f3cf56;
       outline: 0;
       border: 0;
@@ -736,7 +736,7 @@ body.loginBg {
       outline: 0;
       border-color: #f5d66e;
       box-shadow: none; }
-  .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-bottom .done-btn, .social-bottom .signup-form .done-btn {
+  .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-bottom .done-btn, .social-bottom .signup-form .done-btn, .signup-form .social-next-btn {
     width: 100%;
     max-width: 300px;
     margin-top: 1em;
@@ -749,7 +749,7 @@ body.loginBg {
     height: auto;
     letter-spacing: 1px;
     line-height: normal; }
-    .signup-form .submit-btn:active, .signup-form .submitted-btn:active, .signup-form .social-bottom .done-btn:active, .social-bottom .signup-form .done-btn:active, .signup-form .submit-btn:hover, .signup-form .submitted-btn:hover, .signup-form .social-bottom .done-btn:hover, .social-bottom .signup-form .done-btn:hover {
+    .signup-form .submit-btn:active, .signup-form .submitted-btn:active, .signup-form .social-bottom .done-btn:active, .social-bottom .signup-form .done-btn:active, .signup-form .social-next-btn:active, .signup-form .submit-btn:hover, .signup-form .submitted-btn:hover, .signup-form .social-bottom .done-btn:hover, .social-bottom .signup-form .done-btn:hover, .signup-form .social-next-btn:hover {
       background: #f3cf56;
       outline: 0;
       border: 0;
@@ -835,7 +835,7 @@ body.loginBg {
   margin-top: 2em;
   width: 100%;
   max-width: 88vw; }
-  .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-bottom .done-btn, .social-bottom .signup-form .done-btn {
+  .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-bottom .done-btn, .social-bottom .signup-form .done-btn, .signup-form .social-next-btn {
     width: 100%;
     max-width: 300px;
     margin-top: 1em;
@@ -848,7 +848,7 @@ body.loginBg {
     height: auto;
     letter-spacing: 1px;
     line-height: normal; }
-    .signup-form .submit-btn:active, .signup-form .submitted-btn:active, .signup-form .social-bottom .done-btn:active, .social-bottom .signup-form .done-btn:active, .signup-form .submit-btn:hover, .signup-form .submitted-btn:hover, .signup-form .social-bottom .done-btn:hover, .social-bottom .signup-form .done-btn:hover {
+    .signup-form .submit-btn:active, .signup-form .submitted-btn:active, .signup-form .social-bottom .done-btn:active, .social-bottom .signup-form .done-btn:active, .signup-form .social-next-btn:active, .signup-form .submit-btn:hover, .signup-form .submitted-btn:hover, .signup-form .social-bottom .done-btn:hover, .social-bottom .signup-form .done-btn:hover, .signup-form .social-next-btn:hover {
       background: #f3cf56;
       outline: 0;
       border: 0;
@@ -940,7 +940,7 @@ body.loginBg {
   position: relative;
   margin-top: 5vh; }
 
-.submit-btn, .submitted-btn, .social-bottom .done-btn {
+.submit-btn, .submitted-btn, .social-bottom .done-btn, .social-next-btn {
   width: 100%;
   max-width: 300px;
   background: #f5d66e;
@@ -952,7 +952,7 @@ body.loginBg {
   height: auto;
   letter-spacing: 1px;
   line-height: normal; }
-  .submit-btn:active, .submitted-btn:active, .social-bottom .done-btn:active, .submit-btn:hover, .submitted-btn:hover, .social-bottom .done-btn:hover {
+  .submit-btn:active, .submitted-btn:active, .social-bottom .done-btn:active, .social-next-btn:active, .submit-btn:hover, .submitted-btn:hover, .social-bottom .done-btn:hover, .social-next-btn:hover {
     background: #f3cf56;
     outline: 0;
     border: 0;
@@ -1115,6 +1115,242 @@ ul.overview-list {
         vertical-align: middle;
         text-align: right;
         color: #757575; }
+
+.greyBg {
+  background-color: #d1d3dc;
+  background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc);
+  background: linear-gradient(-45deg, #c0c3cb, #f8f7fc);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.social-search-bg {
+  position: relative;
+  height: auto;
+  padding-bottom: 1em;
+  width: 100%;
+  background-color: #5bbaaf;
+  background: -webkit-linear-gradient(-45deg, #458d85, #5bbaaf);
+  background: linear-gradient(-45deg, #458d85, #5bbaaf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    padding: 9px 3px;
+    margin-bottom: 0; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #f4f2f9;
+      width: 21px;
+      height: 3px;
+      border-radius: 2px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+
+h1.socialsearch-title {
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 2.5em; }
+
+.search-content {
+  width: 95%;
+  display: block;
+  margin: auto;
+  margin-top: 2em; }
+
+.social-next-btn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 1.5em; }
+
+.radio {
+  padding-left: 20px;
+  margin-bottom: 1em; }
+
+.radio label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px;
+  line-height: 1em;
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif; }
+
+.radio label::after {
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif; }
+
+.radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #67696e;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: border 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out; }
+
+.radio label::after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 17px;
+  height: 17px;
+  left: 0px;
+  top: 0px;
+  margin-left: -20px;
+  border-radius: 50%;
+  background-color: #555555;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+
+.radio input[type="radio"] {
+  opacity: 0;
+  z-index: 1; }
+
+.radio input[type="radio"]:checked + label::after {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1); }
+
+.radio input[type="radio"]:disabled + label {
+  opacity: 0.65; }
+
+.radio input[type="radio"]:disabled + label::before {
+  cursor: not-allowed; }
+
+.radio.radio-inline {
+  margin-top: 0; }
+
+.radio-danger input[type="radio"] + label::after {
+  background-color: #85bae7; }
+
+.radio-danger input[type="radio"]:checked + label {
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif; }
+
+.radio-danger input[type="radio"]:checked + label::before {
+  border-color: #85bae7; }
+
+.radio-danger input[type="radio"]:checked + label::after {
+  background-color: #85bae7; }
+
+.fancy-select {
+  position: relative;
+  font-size: 14px;
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif; }
+  .fancy-select select:focus + div.trigger.open {
+    box-shadow: none; }
+  .fancy-select .trigger {
+    height: 44px;
+    border: 1px solid #67696e;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    color: #999;
+    padding: 12px;
+    transition: all 240ms ease-out;
+    -webkit-transition: all 240ms ease-out;
+    -moz-transition: all 240ms ease-out;
+    -ms-transition: all 240ms ease-out;
+    -o-transition: all 240ms ease-out; }
+  .fancy-select .trigger:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #67696e;
+    top: 18px;
+    right: 9px; }
+  .fancy-select .trigger.open {
+    color: #999; }
+  .fancy-select ul.options {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding-left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 50;
+    overflow: auto;
+    background: #fff;
+    border-radius: 0px;
+    color: #9d9eac;
+    border: 1px solid #67696e;
+    border-bottom: none;
+    width: 100%;
+    transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out; }
+  .fancy-select ul.options.open {
+    visibility: visible;
+    top: 50px;
+    opacity: 1;
+    transition: opacity 300ms ease-out, top 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out; }
+  .fancy-select ul.options.overflowing {
+    top: auto;
+    bottom: 40px;
+    transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out; }
+  .fancy-select ul.options.overflowing.open {
+    top: auto;
+    bottom: 50px;
+    transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out; }
+  .fancy-select ul.options li {
+    padding: 8px 12px;
+    color: #333;
+    border-bottom: 1px solid #67696e;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 150ms ease-out;
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -ms-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out; }
+  .fancy-select ul.options li.selected, .fancy-select ul.options li.hover {
+    color: #77828b; }
 
 html {
   font-size: 16px;
