@@ -3,6 +3,9 @@
   display: block;
   margin: auto; }
 
+.bold {
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif; }
+
 @font-face {
   font-family: "vag_rounded-boldregular";
   src: url("../fonts/vag-rounded-bold-webfont.woff2") format("woff2"), url("../fonts/vag-rounded-bold-webfont.woff") format("woff");
@@ -1589,6 +1592,123 @@ h1.socialsearch-title {
     margin: auto;
     left: 0;
     right: 0; }
+
+.lightgreyBg {
+  background-color: #dce1ea;
+  background: -webkit-linear-gradient(-45deg, #dce1ea, #f8f7fc);
+  background: linear-gradient(-45deg, #dce1ea, #f8f7fc);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.report-card-bg {
+  position: relative;
+  height: auto;
+  padding-bottom: 0.5em;
+  width: 100%;
+  background-color: #5bbaaf;
+  background: -webkit-linear-gradient(-45deg, #458d85, #5bbaaf);
+  background: linear-gradient(-45deg, #458d85, #5bbaaf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    padding: 9px 3px;
+    margin-bottom: 0; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #f4f2f9;
+      width: 21px;
+      height: 3px;
+      border-radius: 2px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+
+.report-card-paragraph {
+  color: white;
+  margin-top: 0.7em;
+  margin-bottom: 0;
+  line-height: 1.5em; }
+
+.search-rate {
+  width: 90%;
+  display: block;
+  position: relative;
+  margin: 1em auto 0; }
+  .search-rate img {
+    display: block;
+    margin: auto;
+    width: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 100%; }
+
+.report-feedback {
+  position: relative;
+  height: 20px;
+  width: 30%;
+  display: block;
+  margin: 0.5em auto;
+  color: #333;
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif; }
+  .report-feedback .thumb-down {
+    color: #333;
+    float: left;
+    display: inline-block;
+    text-decoration: none; }
+    .report-feedback .thumb-down img {
+      margin-right: 5px; }
+  .report-feedback .thumb-up {
+    color: #333;
+    margin-right: 10px;
+    float: right;
+    display: inline-block;
+    text-decoration: none; }
+    .report-feedback .thumb-up img {
+      margin-right: 5px; }
+
+#dashboard-chart svg {
+  margin: 0.7em auto 0;
+  display: block; }
+#dashboard-chart .generalProgress {
+  font-size: 40px;
+  font-weight: bold;
+  top: -10px; }
+#dashboard-chart .weeklyProgress {
+  font-size: 1.5em;
+  text-anchor: middle;
+  font-weight: bold;
+  padding-top: 10px; }
+
+.report-banner {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #293339;
+  bottom: 0;
+  padding: 1em; }
+  .report-banner h4 {
+    text-transform: uppercase;
+    color: white;
+    float: right;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    margin: 0; }
+    .report-banner h4 img {
+      vertical-align: top; }
+
+.report-card--title {
+  font-size: 2em;
+  color: white;
+  margin-top: 0; }
 
 html {
   font-size: 16px;
