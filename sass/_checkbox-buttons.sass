@@ -1,0 +1,84 @@
+.checkbox
+    padding-left: 20px
+    margin-bottom: 1em
+    
+    label
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        padding-left: 5px
+        line-height: 1em
+        font-family: $vag_regular
+    
+    label::after
+        font-family: $vag_bold
+  
+    label::before  
+        content: "" 
+        display: inline-block 
+        position: absolute 
+        width: 17px 
+        height: 17px 
+        left: 0 
+        margin-left: -20px 
+        border: 1px solid #67696e 
+        border-radius: 50% 
+        background-color: transparent
+        -webkit-transition: border 0.15s ease-in-out 
+        -o-transition: border 0.15s ease-in-out 
+        transition: border 0.15s ease-in-out
+
+    label::after  
+        display: inline-block 
+        position: absolute 
+        content: " " 
+        width: 17px 
+        height: 17px 
+        left: 0px 
+        top: 0px 
+        margin-left: -20px 
+        border-radius: 50% 
+        background-color: #555555 
+        -webkit-transform: scale(0, 0) 
+        -ms-transform: scale(0, 0) 
+        -o-transform: scale(0, 0) 
+        transform: scale(0, 0) 
+        -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33) 
+        -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33) 
+        -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33) 
+        transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33) 
+ 
+    input[type="checkbox"]  
+        opacity: 0 
+        z-index: 1 
+ 
+
+    input[type="checkbox"]:checked + label::after  
+        -webkit-transform: scale(1, 1) 
+        -ms-transform: scale(1, 1) 
+        -o-transform: scale(1, 1) 
+        transform: scale(1, 1) 
+
+    input[type="checkbox"]:disabled + label  
+        opacity: 0.65 
+ 
+    input[type="checkbox"]:disabled + label::before  
+        cursor: not-allowed 
+ 
+    .radio-inline  
+        margin-top: 0 
+ 
+.checkbox-danger
+    input[type="checkbox"] + label::after  
+        background-color: #85bae7 
+    
+    input[type="checkbox"]:checked + label 
+        font-family: $vag_bold
+    
+ 
+    input[type="checkbox"]:checked + label::before  
+        border-color: #85bae7 
+ 
+    input[type="checkbox"]:checked + label::after  
+        background-color: #85bae7 
+ 

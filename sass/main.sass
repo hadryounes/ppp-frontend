@@ -25,13 +25,14 @@ $vag_regular: 'vag_roundedregular', helvetica, arial, sans-serif
 @import socialsearch-start
 @import radio-buttons
 @import dropdown
+@import socialsearch-criterias
+@import checkbox-buttons
+@import socialsearch-rate
 
 // General style
 html
     //Set general font size here, 16px = 1rem
     font-size: 16px
-    //Set general font family here
-    font-family: $vag_regular
     height: 100%
     
 body 
@@ -39,6 +40,7 @@ body
     min-height: 100%
     height: 100%
     background-color: white
+    font-family: $vag_regular
 
 .row.no-gutters
     margin-right: 0
@@ -68,3 +70,10 @@ body
     min-height: 100% 
     margin-bottom: -40px // Put negative height of the footer here
     padding-bottom: 40px // Put height of the footer here. Needed for higher than screen height pages
+
+
+h4.header-title
+    color: rgba(255, 255, 255, .6)
+    text-align: center
+    font-size: 1em
+    font-family: $vag_bold

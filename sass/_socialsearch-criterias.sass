@@ -1,0 +1,82 @@
+// Social search - Criterias
+
+.greyBg
+    //Fallback
+    background-color: #d1d3dc
+    
+    //Chrome 10-25, Safari 5.1-6
+    background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc)
+    //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    background: linear-gradient(-45deg, #c0c3cb, #f8f7fc)
+    background-size: cover
+    background-repeat: no-repeat
+    -webkit-box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+    box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+    
+    
+.social-search-bg
+    position: relative
+    height: auto
+    padding-bottom: 1em
+    width: 100%
+    
+    //Fallback
+    background-color: #5bbaaf
+    
+    //Chrome 10-25, Safari 5.1-6
+    background: -webkit-linear-gradient(-45deg, #458d85, #5bbaaf)
+    //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    background: linear-gradient(-45deg, #458d85, #5bbaaf)
+    background-size: cover
+    background-repeat: no-repeat
+    -webkit-box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+    box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+
+.navbar 
+    margin-bottom: 0px
+    
+.navbar-default 
+    background-color: transparent
+    border-color: transparent
+    .navbar-toggle
+        border-color: transparent
+        padding: 9px 3px
+        margin-bottom: 0
+        
+        .icon-bar 
+            background-color: #f4f2f9
+            width: 21px
+            height: 3px
+            border-radius: 2px
+            
+        &:focus, &:hover
+            background-color: transparent    
+
+
+.criterias-paragraph
+    color: white
+    text-align: left
+    max-width: 80%
+    display: block
+    margin: 1em 1em 0
+    font-size: .9em
+    
+.search-criterias
+    width: 95%
+    display: block
+    margin: auto
+    margin-top: 2em
+    
+    .checkbox
+        margin-bottom: 1.5em
+        margin-left: 1em
+    
+    
+.social-next-btn
+    @extend .submit-btn
+    position: absolute
+    right: 0
+    left: 0
+    margin: auto
+    bottom: 1.5em
+    
