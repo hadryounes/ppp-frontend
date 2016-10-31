@@ -32,6 +32,7 @@ $vag_regular: 'vag_roundedregular', helvetica, arial, sans-serif
 @import checkbox-buttons
 @import socialsearch-rate
 @import report-card
+@import report-success
 
 // General style
 html
@@ -81,3 +82,35 @@ h4.header-title
     text-align: center
     font-size: 1em
     font-family: $vag_bold
+    
+
+.submit-btn
+    @extend .centered
+    width: 100%
+    max-width: 300px
+    margin-top: 1em
+    background: $yellow
+    border: 0
+    color: white
+    font-family: $vag_bold
+    font-size: 1.15em
+    padding: .9em
+    height: auto
+    letter-spacing: 1px
+    line-height: normal
+    
+    &:active, &:hover
+        background: $yellow-dark
+        outline: 0
+        border: 0
+        color: white
+
+.report-success-content
+    margin-top: 1em
+    display: block
+    width: 100%
+    p
+        margin-top: 1em
+        text-align: center
+        padding-left: 10px
+        padding-right: 10px
