@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.centered, .login-form .submit-btn, .login-form .submitted-btn, .login-form .social-next-btn, .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-next-btn, #profile_builder .strengthen-btn, .submit-btn, .submitted-btn, .social-bottom .done-btn, .social-next-btn {
+.centered, .login-form .submit-btn, .login-form .submitted-btn, .login-form .social-next-btn, .signup-form .submit-btn, .signup-form .submitted-btn, .signup-form .social-next-btn, #profile_builder .strengthen-btn, .submit-btn, .submitted-btn, .social-bottom .done-btn, .social-next-btn, .filter-button {
   display: block;
   margin: auto; }
 
@@ -1761,6 +1761,98 @@ h1.socialsearch-title {
   left: 0;
   right: 0; }
 
+.lightgreyBg {
+  background-color: #dce1ea;
+  background: -webkit-linear-gradient(-45deg, #dce1ea, #f8f7fc);
+  background: linear-gradient(-45deg, #dce1ea, #f8f7fc);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.darkgreyBg {
+  background-color: #dce1ea;
+  background: -webkit-linear-gradient(-45deg, #848891, #b9bcc7);
+  background: linear-gradient(-45deg, #848891, #b9bcc7);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.header-bg {
+  background-color: #5bbaaf;
+  background: -webkit-linear-gradient(-45deg, #458d85, #5bbaaf);
+  background: linear-gradient(-45deg, #458d85, #5bbaaf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  height: 3.125em; }
+
+.report-banner {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #293339;
+  bottom: 0;
+  padding: 1em; }
+  .report-banner h4.left {
+    text-transform: uppercase;
+    color: white;
+    float: left;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    margin: 0; }
+    .report-banner h4.left img {
+      vertical-align: top; }
+  .report-banner .arrow-left {
+    float: left; }
+  .report-banner h4.right {
+    text-transform: uppercase;
+    color: white;
+    float: right;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+    margin: 0; }
+    .report-banner h4.right img {
+      vertical-align: top; }
+  .report-banner .arrow-right {
+    float: right; }
+
+.filter-button {
+  margin-top: 1em; }
+  .filter-button .close-icon {
+    display: none;
+    outline: none; }
+  .filter-button .filter-icon {
+    display: block;
+    outline: none; }
+  .filter-button:focus .close-icon {
+    display: block;
+    outline: none; }
+  .filter-button:focus .filter-icon {
+    display: none;
+    outline: none; }
+
+#search-filter .well {
+  color: #333;
+  border-radius: 0;
+  border: 0;
+  margin-top: 10px;
+  padding: 5px;
+  margin-bottom: 5px; }
+  #search-filter .well .filter-criterias .checkbox label::before {
+    border: 1px solid white; }
+
+#search-results .search-result {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #fafafa;
+  background-image: url(../img/arrow_right.svg);
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
+  background-position: right; }
+  #search-results .search-result h4 {
+    font-size: 1em;
+    font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif; }
+  #search-results .search-result p {
+    font-size: 0.9em;
+    margin-bottom: 5px; }
+
 html {
   font-size: 16px;
   height: 100%; }
@@ -1801,10 +1893,12 @@ body {
   padding-bottom: 40px; }
 
 h4.header-title {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 1em;
-  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif; }
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 .submit-btn, .submitted-btn, .social-bottom .done-btn, .social-next-btn {
   width: 100%;
@@ -1834,5 +1928,29 @@ h4.header-title {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  padding: 0px;
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  z-index: 9999; }
+
+.back-btn {
+  position: absolute;
+  height: 1em;
+  width: 1em;
+  top: 0.5em;
+  left: 3px;
+  z-index: 999; }
+  .back-btn img {
+    opacity: 0.8; }
+
+@media screen and (min-width: 768px) {
+  .navbar-default .navbar-toggle {
+    right: 15px;
+    top: 5px;
+    padding-right: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

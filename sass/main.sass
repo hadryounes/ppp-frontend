@@ -33,6 +33,7 @@ $vag_regular: 'vag_roundedregular', helvetica, arial, sans-serif
 @import socialsearch-rate
 @import report-card
 @import report-success
+@import search-results
 
 // General style
 html
@@ -78,10 +79,12 @@ body
 
 
 h4.header-title
-    color: rgba(255, 255, 255, .6)
+    color: rgba(255, 255, 255, .8)
     text-align: center
     font-size: 1em
     font-family: $vag_bold
+    margin-top: 1em
+    margin-bottom: 1em
     
 
 .submit-btn
@@ -114,3 +117,30 @@ h4.header-title
         text-align: center
         padding-left: 10px
         padding-right: 10px
+
+.navbar-default 
+    .navbar-toggle
+        border-color: transparent
+        padding: 0px
+        position: absolute
+        right: 5px
+        top: 12px
+        z-index: 9999
+        
+.back-btn
+    position: absolute
+    height: 1em
+    width: 1em
+    top: .5em
+    left: 3px
+    z-index: 999
+    img
+        opacity: .8
+        
+
+@media screen and (min-width:768px)
+    .navbar-default 
+        .navbar-toggle
+            right: 15px
+            top: 5px
+            padding-right: 15px
