@@ -1,0 +1,273 @@
+// Dashboard screen
+
+.league_table-top
+    position: relative
+    height: auto
+    width: 100%
+    padding-bottom: 5px
+    //padding-bottom: .7em
+    
+    //Fallback
+    background-color: #5cd3d4
+    background-image: url(../img/dashboard-top_bg.png)
+    
+    //Chrome 10-25, Safari 5.1-6
+    background: -webkit-linear-gradient(45deg, #7bbeef, #61d4ca, #dbcd8d)
+    //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+    background: linear-gradient(45deg, #7bbeef, #61d4ca, #dbcd8d)
+    background-size: cover
+    background-repeat: no-repeat
+    -webkit-box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+    box-shadow: 0 1px 20px 1px rgba(0,0,0,.2)
+
+.navbar 
+    margin-bottom: 0px
+    
+.navbar-default 
+    background-color: transparent
+    border-color: transparent
+    .navbar-toggle
+        border-color: transparent
+        padding: 9px 3px
+        margin-bottom: 0
+        
+        .icon-bar 
+            background-color: #f4f2f9
+            width: 21px
+            height: 3px
+            border-radius: 2px
+            
+        &:focus, &:hover
+            background-color: transparent    
+
+
+.user-avatar
+    position: relative
+    height: 95px
+    width: 95px
+    background: #fafafa
+    border-radius: 50px
+    border: 4px solid #f1f0f6
+    margin: auto
+    display: block
+    overflow: hidden
+    
+    img
+        height: 100px
+        width: 100px
+
+
+.user-title
+    text-align: center
+    color: #f4f2f9
+    margin-top: 10px
+    
+    h4
+        font-size: 1.3125em
+        font-family: $vag_bold
+        margin: 0
+    p
+        font-size: 0.9375
+        font-family: $vag_regular
+        margin-top: 5px
+
+.league_table_tabs
+    position: relative
+    height: 30px
+    width: 100%
+    margin-bottom: 10px
+    max-width: 450px
+    @extend .centered
+    .nav-tabs
+        //position: absolute
+        //position: relative
+        //height: 30px
+        //width: 100%
+        //max-width: 450px
+        //padding: 0px 5px
+        //bottom: 0px
+        border: none
+        text-align: center
+        margin: auto
+        
+        li
+            width: auto
+            
+        li:first-child //First tab : Dashboard
+            width: 24%
+            float: left
+            text-align: center
+            
+        li:nth-child(2) //Second tab : Online Brand Search
+            width: 31%
+            
+        li:nth-child(3) //Third tab : Profile builder
+            width: 33%
+        
+        li:nth-child(4) //Third tab : Profile builder
+            width: 12%
+            img
+                @extend .centered
+    
+        li>a, li.active>a, li.active>a:focus, li.active>a:hover
+            background-color: transparent
+            font-size: 3.5vw
+            padding: 0
+            border: 0
+            line-height: normal
+            color: white
+        li>a
+            font-family: $vag_regular
+            text-transform: uppercase
+            
+        li.active a
+            font-family: $vag_bold
+            text-transform: uppercase 
+            
+            span
+                border-bottom: 0
+                padding-bottom: 0px 
+    
+    .tab-content
+        position: relative
+        margin-top: 2vh
+    
+
+#dashboard-chart
+    svg
+        margin: 2em auto
+        display: block
+        
+    .generalProgress
+        font-size: 40px
+        font-weight: bold
+        top: -10px
+    .weeklyProgress
+        font-size: 1.5em
+        text-anchor: middle
+        font-weight: bold
+        padding-top: 10px
+
+
+
+
+// Profile Builder Tab Content
+
+#profile_builder
+
+    h4
+        text-align: center
+        margin-top: 4vh
+        margin-bottom: 0px
+        font-family: $vag_bold
+
+    #pb-facebook-chart, #pb-linkedin-chart, #pb-twitter-chart, #pb-xing-chart
+        max-width: 100% !important
+        overflow: hidden
+        svg
+            display: block
+            margin: 0px auto 10px
+            width: auto
+            max-width: 100%
+    
+            .generalProgress
+                font-family: $vag_bold
+                text-transform: uppercase 
+                font-size: 1em
+    
+    .strengthen-btn
+        background: $yellow
+        padding: .2em .8em
+        color: white
+        border: none
+        box-shadow: none
+        margin-top: -.3em
+        @extend .centered
+        &:active, &:focus
+            outline: none
+            background: $yellow-dark
+
+
+
+
+.league_table-content
+    margin-top: 1em
+    
+    h4
+        font-family: $vag_bold
+        text-align: center
+        margin-top: 0
+        line-height: 1.5em
+        
+    .league-tab-filter
+        padding: 0
+        text-align: center
+        li
+            text-align: center
+            list-style: none
+            display: inline
+            a
+                font-family: $vag_regular
+                font-size: .8em
+                color: #333
+                &:active
+                    text-decoration: underline
+        li + li:before
+            content: "|"
+            padding: 0 10px
+            color: #ccc
+            opacity: .5
+    
+    .league-table
+        margin-top: 1em
+        border-bottom: 1px solid #DCDCDC
+        thead
+            display: none
+        tbody
+            td a.arrow-right-link
+                float: right
+        
+
+
+//Media queries
+
+        
+//Display hamburger menu on iPad
+@media (min-width: 768px)
+    .navbar-toggle
+        position: relative
+        float: right
+        display: block
+        
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header
+        margin-right: -15px
+        margin-left: -15px
+        width: 100%
+        
+    .navbar-default .navbar-toggle 
+        margin-top: 10px
+        margin-right: -15px
+
+//Adjusting nav-tabs font-size and bottom distance for iPad
+@media screen and (min-width:768px)
+    .nav-tabs
+        bottom: .8em
+        li>a, li.active>a, li.active>a:focus, li.active>a:hover
+            font-size: 2.2vw
+        
+//Giving user-title a bit of space large mobile screens
+@media screen and (min-width:400px)
+    .user-title
+        margin-top: 15px
+
+//Making user-avatar look bigger on large mobile screens
+@media screen and (min-width:400px)
+    .user-avatar
+        height: 100px
+        width: 100px
+        
+
+//dashboard-top adjustment for iPhone 5 and similar        
+@media screen and (max-width:320px)
+    .dashboard-top
+        height: 42%
