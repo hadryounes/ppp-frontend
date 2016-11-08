@@ -1119,65 +1119,6 @@ ul.overview-list {
         text-align: right;
         color: #757575; }
 
-.greyBg {
-  background-color: #d1d3dc;
-  background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc);
-  background: linear-gradient(-45deg, #c0c3cb, #f8f7fc);
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
-
-.social-search-bg {
-  position: relative;
-  height: auto;
-  padding-bottom: 1em;
-  width: 100%;
-  background-color: #5bbaaf;
-  background: -webkit-linear-gradient(-45deg, #458d85, #5bbaaf);
-  background: linear-gradient(-45deg, #458d85, #5bbaaf);
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
-
-.navbar {
-  margin-bottom: 0px; }
-
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent; }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    padding: 9px 3px;
-    margin-bottom: 0; }
-    .navbar-default .navbar-toggle .icon-bar {
-      background-color: #f4f2f9;
-      width: 21px;
-      height: 3px;
-      border-radius: 2px; }
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-      background-color: transparent; }
-
-h1.socialsearch-title {
-  font-family: "vag_roundedregular", helvetica, arial, sans-serif;
-  color: white;
-  margin: 0;
-  font-size: 2.5em; }
-
-.search-content {
-  width: 95%;
-  display: block;
-  margin: auto;
-  margin-top: 2em; }
-
-.social-next-btn {
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: auto;
-  bottom: 1.5em; }
-
 .radio {
   padding-left: 20px;
   margin-bottom: 1em; }
@@ -1592,6 +1533,16 @@ h1.socialsearch-title {
     margin: auto;
     left: 0;
     right: 0; }
+
+.progress {
+  height: 4px;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0; }
+  .progress .progress-bar {
+    background-color: #ceabce;
+    box-shadow: none; }
 
 .lightgreyBg {
   background-color: #dce1ea;
@@ -2102,6 +2053,92 @@ h1.socialsearch-title {
 @media screen and (max-width: 320px) {
   .dashboard-top {
     height: 42%; } }
+.greyBg {
+  background-color: #d1d3dc;
+  background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc);
+  background: linear-gradient(-45deg, #c0c3cb, #f8f7fc);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.social-search-bg {
+  position: relative;
+  height: auto;
+  padding-bottom: 1em;
+  width: 100%;
+  background-color: #5bbaaf;
+  background: -webkit-linear-gradient(-45deg, #458d85, #5bbaaf);
+  background: linear-gradient(-45deg, #458d85, #5bbaaf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    padding: 9px 3px;
+    margin-bottom: 0; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #f4f2f9;
+      width: 21px;
+      height: 3px;
+      border-radius: 2px; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+
+h1.socialsearch-title {
+  font-family: "vag_roundedregular", helvetica, arial, sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 2.5em; }
+
+.search-content {
+  width: 95%;
+  display: block;
+  margin: auto;
+  margin-top: 2em; }
+
+.social-next-btn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 1.5em; }
+
+.social-next-grey-btn {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1em;
+  background: #B3B5BD;
+  border: 0;
+  color: #CDCED3;
+  font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
+  font-size: 1.15em;
+  padding: 0.9em;
+  height: auto;
+  letter-spacing: 1px;
+  line-height: normal;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 1.5em; }
+  .social-next-grey-btn:active, .social-next-grey-btn:hover, .social-next-grey-btn:focus {
+    background: #B3B5BD;
+    outline: none !important;
+    box-shadow: none;
+    border: 0;
+    color: #CDCED3; }
+
 html {
   font-size: 16px;
   height: 100%; }
