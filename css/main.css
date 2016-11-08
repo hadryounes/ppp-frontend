@@ -278,7 +278,7 @@ body.greenBg {
 
 .dashboard-top {
   position: relative;
-  height: 37%;
+  height: 37vh;
   width: 100%;
   background-color: #5cd3d4;
   background-image: url(../img/dashboard-top_bg.png);
@@ -375,7 +375,7 @@ body.greenBg {
   margin-top: 2vh; }
 
 #dashboard-chart svg {
-  margin: 2em auto;
+  margin: 1em auto 0.5em;
   display: block; }
 #dashboard-chart .generalProgress {
   font-size: 40px;
@@ -446,7 +446,7 @@ body.greenBg {
     width: 100px; } }
 @media screen and (max-width: 320px) {
   .dashboard-top {
-    height: 42%; } }
+    height: 42vh; } }
 body, html {
   font-size: 100%;
   padding: 0;
@@ -569,9 +569,17 @@ a {
       margin-left: 5px; }
       .cbp-spmenu-vertical ul li a {
         font-family: "vag_roundedregular", helvetica, arial, sans-serif;
-        font-size: 0.8em;
+        font-size: 0.7em;
         color: white;
         opacity: 0.6; }
+
+a.cbp-close {
+  float: right;
+  position: absolute;
+  right: 1em;
+  top: 7px; }
+  a.cbp-close:active, a.cbp-close:focus, a.cbp-close:hover {
+    background: none; }
 
 /* Vertical menu that slides from the left or right */
 .cbp-spmenu-right {
@@ -1022,9 +1030,7 @@ body.loginBg {
   background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc);
   background: linear-gradient(-45deg, #c0c3cb, #f8f7fc);
   background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+  background-repeat: no-repeat; }
 
 .profile-overview-top {
   position: relative;
@@ -1301,9 +1307,7 @@ ul.overview-list {
   background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc);
   background: linear-gradient(-45deg, #c0c3cb, #f8f7fc);
   background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+  background-repeat: no-repeat; }
 
 .social-search-bg {
   position: relative;
@@ -1628,7 +1632,7 @@ ul.overview-list {
       margin-right: 5px; }
 
 #dashboard-chart svg {
-  margin: 0.7em auto 0;
+  margin: 1em auto 0.5em;
   display: block; }
 #dashboard-chart .generalProgress {
   font-size: 40px;
@@ -1786,8 +1790,11 @@ ul.overview-list {
   margin-top: 10px;
   padding: 5px;
   margin-bottom: 5px; }
-  #search-filter .well .filter-criterias .checkbox label::before {
-    border: 1px solid white; }
+#search-filter .filter-criterias .checkbox label::before {
+  border: 1px solid white; }
+
+.filter-criterias {
+  padding-bottom: 100px; }
 
 #search-results .search-result {
   padding-top: 0.5em;
@@ -1853,7 +1860,7 @@ ul.overview-list {
   position: relative;
   height: auto;
   width: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
   background-color: #5cd3d4;
   background-image: url(../img/dashboard-top_bg.png);
   background: -webkit-linear-gradient(45deg, #7bbeef, #61d4ca, #dbcd8d);
@@ -1951,7 +1958,7 @@ ul.overview-list {
     margin-top: 2vh; }
 
 #dashboard-chart svg {
-  margin: 2em auto;
+  margin: 1em auto 0.5em;
   display: block; }
 #dashboard-chart .generalProgress {
   font-size: 40px;
@@ -2052,15 +2059,13 @@ ul.overview-list {
     width: 100px; } }
 @media screen and (max-width: 320px) {
   .dashboard-top {
-    height: 42%; } }
+    height: 42vh; } }
 .greyBg {
   background-color: #d1d3dc;
   background: -webkit-linear-gradient(-45deg, #c0c3cb, #f8f7fc);
   background: linear-gradient(-45deg, #c0c3cb, #f8f7fc);
   background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.2); }
+  background-repeat: no-repeat; }
 
 .social-search-bg {
   position: relative;
@@ -2127,7 +2132,7 @@ h1.socialsearch-title {
   height: auto;
   letter-spacing: 1px;
   line-height: normal;
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   margin: auto;
@@ -2140,12 +2145,10 @@ h1.socialsearch-title {
     color: #CDCED3; }
 
 html {
-  font-size: 16px;
-  height: 100%; }
+  font-size: 16px; }
 
 body {
-  min-height: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: white;
   font-family: "vag_roundedregular", helvetica, arial, sans-serif; }
 
@@ -2179,7 +2182,7 @@ body {
   padding-bottom: 40px; }
 
 h4.header-title {
-  color: rgba(255, 255, 255, 0.8);
+  color: #cbced7;
   text-align: center;
   font-size: 1em;
   font-family: "vag_rounded-boldregular", "vag_roundedregular", helvetica, arial, sans-serif;
