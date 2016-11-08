@@ -1,5 +1,5 @@
 
-  var data = [80,10];
+  var data = [80,20];
   
   
   var width = 95,
@@ -11,8 +11,8 @@
       r = innerRadius - 100;
   
   var pie = d3.layout.pie()
-    .sort(null)
-    .value(function(d) { return d.value; });
+    .sort(null);
+    //.value(function(d) { return d.value; });
   
   var arcs = pie(data);
   
@@ -22,7 +22,7 @@
       .cornerRadius(cornerRadius);
   
   var color = d3.scale.ordinal()
-    .range(["#f1f3f8", "#5bbaaf"]);
+    .range(["#f1f3f8", "#5bbaaf", "#c4d36d"]);
   
   var svg = d3.select("#pb-linkedin-chart").append("svg")
       .attr("width", width)

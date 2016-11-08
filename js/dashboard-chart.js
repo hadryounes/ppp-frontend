@@ -4,33 +4,20 @@ function donut(){
   var data = {};
   // var showTitle = true;
   
-  var width = 190,
-    height = 160,
-    radius = Math.min(width, height) / 3,
-    cornerRadius = 8,
-    r = radius - 100;
+  var width = 480,
+      height = 200,
+      radius = Math.min(width, height) / 2;
+      donutWidth = 20; 
     
-/*  var width = 95,
-      height = 80,
-      outerRadius = height / 2 - 10,
-      innerRadius = outerRadius - 7,
-      cornerRadius = 8,
-      padAngle = -0.2;
-      r = innerRadius - 100;
-  */
-/*var pie = d3.layout.pie()
-//var pie = d3.layout.pie().sort(null)
-    .padAngle(padAngle);*/
       
   var currentVal;
   var color = d3.scale.ordinal()
-    .range(["#5bbaaf", "#f1f3f8"]);
+    .range(["#5bbaaf", "#c4d36d", "#f1f3f8"]);
   var pie = d3.layout.pie()
     .sort(null)
     .value(function(d) { return d.value; });
 
   var svg, g, arc; 
-
 
   var object = {};
 
@@ -38,8 +25,10 @@ function donut(){
   object.render = function(){
     if(!svg){
       arc = d3.svg.arc()
-      .outerRadius(radius)
-      .innerRadius(radius - (radius/2.5));
+        .outerRadius(radius)
+        .innerRadius(radius - (radius/6));
+        //padAngle = -0.2;
+        //r = innerRadius - 100;
 
       svg = $el.append("svg")
         .attr("width", width)
