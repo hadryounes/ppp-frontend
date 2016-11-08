@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dashboard Screen</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <button id="refresh">Refresh Data</button>
+    <div id="dashboard-chart"></div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/dashboard-chart.js"></script>
+    <script>
+    
+      var getData = function(){
+        var size = 2;
+        var data = {};
+        var text = "";
+        for(var i=0; i<size; i++){
+          data["data-"+(i+1)] = Math.round(Math.random() * 100);
+          text += "data-"+ (i+1) +" = " + data["data-"+(i+1)] + "<br/>";
+        };
+        d3.select("#data").html(text);
+        return data;
+      };
+      
+      var chart = donut()
+                    .$el(d3.select("#dashboard-chart"))
+                    .data(getData())
+                    .render();
+      
+      
+      d3.select("#refresh").on("click", function(){
+        chart.data(getData()).render();
+      });
+      
+    </script>
+
+  </body>
+</html>

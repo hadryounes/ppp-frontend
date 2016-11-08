@@ -1,5 +1,5 @@
 
-  var data = [20, 80];
+  var data = [80,10];
   
   
   var width = 95,
@@ -11,7 +11,8 @@
       r = innerRadius - 100;
   
   var pie = d3.layout.pie()
-      .padAngle(padAngle);
+    .sort(null)
+    .value(function(d) { return d.value; });
   
   var arcs = pie(data);
   
@@ -42,6 +43,6 @@
     .attr("dy", "5px")
     .style("text-anchor", "middle")
     .attr("class", "generalProgress")
-    .text(function(d) { return '80%'; })
+    .text(function(d) { return '20%'; })
     .style("fill", "black")
     ;
