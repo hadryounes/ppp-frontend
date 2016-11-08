@@ -12,7 +12,7 @@ function donut(){
       
   var currentVal;
   var color = d3.scale.ordinal()
-    .range(["#5bbaaf", "#c4d36d", "#f1f3f8"]);
+    .range(["#5bbaaf", "#c4d36d", "#f1f3f8", "#e98181"]);
   var pie = d3.layout.pie()
     .sort(null)
     .value(function(d) { return d.value; });

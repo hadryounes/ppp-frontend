@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dashboard Screen</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--<button id="refresh">Refresh Data</button>-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12"><div id="test-chart-1"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12"><div id="test-chart-2"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12"><div id="test-chart-3"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12"><div id="test-chart-4"></div></div>
+      </div>
+    </div>
+
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/dashboard-chart.js"></script>
+    <!--Test case 1-->
+    <script>
+      var getData = function(){
+        var size = 3;// Add another data by changing the number 2 to 3
+        var data = {};
+        var text = "";
+        
+        return {
+              'data-1': 21, // green
+              'data-2': 0, // light green when positive, light red when negative
+              'data-3': 79, // Grey area
+          }
+        return data;
+      };
+      
+      var chart = donut()
+        .$el(d3.select("#test-chart-1"))
+        .data(getData())
+        .render();
+    </script>
+    
+    <!--Test case 2-->
+    <script>
+      var getData = function(){
+        var size = 3;// Add another data by changing the number 2 to 3
+        var data = {};
+        var text = "";
+        
+        return {
+              'data-1': 79, // green
+              'data-2': 0, // light green when positive, light red when negative
+              'data-3': 21, // Grey area
+          }
+        return data;
+      };
+      
+      var chart = donut()
+        .$el(d3.select("#test-chart-2"))
+        .data(getData())
+        .render();
+    </script>
+    
+    <!--Test case 3-->
+    <script>
+      var getData = function(){
+        var size = 3;// Add another data by changing the number 2 to 3
+        var data = {};
+        var text = "";
+        
+        return {
+            "data-1": 21, // dark green
+            "data-2": 10, // light green (delta)
+            "data-3": 69 // grey (rest of the chart)
+          }
+        return data;
+      };
+      
+      var chart = donut()
+        .$el(d3.select("#test-chart-3"))
+        .data(getData())
+        .render();
+    </script>
+    
+    <!--Test case 4-->
+    <script>
+      var getData = function(){
+        var size = 3;// Add another data by changing the number 2 to 3
+        var data = {};
+        var text = "";
+        
+        return {
+         "data-1": 21, // dark green
+         "data-2": 10, // light RED (negative delta)
+         "data-3": 69 // grey (rest of the chart)
+          }
+        return data;
+      };
+      
+      var chart = donut()
+        .$el(d3.select("#test-chart-3"))
+        .data(getData())
+        .render();
+    </script>
+    
+    
+
+  </body>
+</html>

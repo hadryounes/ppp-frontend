@@ -6,8 +6,8 @@
       height = 250,
       outerRadius = height / 2 - 10,
       innerRadius = outerRadius - 12,
-      cornerRadius = 10,
-      padAngle = -0.1;
+      cornerRadius = 10, // New
+      padAngle = -0.2, // New
       r = innerRadius - 100;
   
   var pie = d3.layout.pie()
