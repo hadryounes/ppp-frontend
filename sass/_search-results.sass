@@ -73,7 +73,13 @@
         
 .filter-button
     @extend .centered
-    margin-top: 1em
+    background: transparent
+    box-shadow: none
+    border: 0
+    margin-top: 1.2em
+    
+    &:focus, &:active
+        outline: 0
     .close-icon
         display: none
         outline: none

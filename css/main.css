@@ -1769,7 +1769,12 @@ ul.overview-list {
     float: right; }
 
 .filter-button {
-  margin-top: 1em; }
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  margin-top: 1.2em; }
+  .filter-button:focus, .filter-button:active {
+    outline: 0; }
   .filter-button .close-icon {
     display: none;
     outline: none; }
@@ -2230,9 +2235,14 @@ h4.header-title {
   position: absolute;
   height: 1em;
   width: 1em;
-  top: 0.5em;
+  top: 0.7em;
   left: 3px;
-  z-index: 999; }
+  z-index: 999;
+  background: transparent;
+  box-shadow: none;
+  border: 0; }
+  .back-btn:focus, .back-btn:active {
+    outline: 0; }
   .back-btn img {
     opacity: 0.8; }
 
